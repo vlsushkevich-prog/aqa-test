@@ -1,26 +1,27 @@
 """Складывает, вычитает, умножает или делит два числа"""
 
 
-def calculator(first_number, second_number, operator):
-    if operator == '+':
-        return first_number + second_number
-    elif operator == '-':
-        return first_number - second_number
-    elif operator == '*':
-        return first_number * second_number
-    elif operator == '/':
-        if second_number == 0:
-            return 'Деление на ноль'
-        else:
-            return first_number / second_number
-    else:
-        return 'Неподдерживаемый оператор'
+# def calculator(first_number, second_number, operator):
+#     if operator == '+':
+#         return first_number + second_number
+#     elif operator == '-':
+#         return first_number - second_number
+#     elif operator == '*':
+#         return first_number * second_number
+#     elif operator == '/':
+#         if second_number == 0:
+#             return 'Деление на ноль'
+#         else:
+#             return first_number / second_number
+#     else:
+#         return 'Неподдерживаемый оператор'
+#
+# first_number = int(input('Введите первое число: '))
+# second_number = int(input('Введите второе число: '))
+# operator = input('Введите оператор (+, -, *, /): ')
+# result = calculator(first_number, second_number, operator)
+# print(result)
 
-first_number = int(input('Введите первое число: '))
-second_number = int(input('Введите второе число: '))
-operator = input('Введите оператор (+, -, *, /): ')
-result = calculator(first_number, second_number, operator)
-print(result)
 
 """Складывает, вычитает, умножает или делит неограниченное количество чисел (только один оператор)"""
 
@@ -47,6 +48,8 @@ def calculator(*numbers, operator):
             else:
                 result /= number
         return result
+    else:
+        return 'Неподдерживаемый оператор'
 
 numbers = tuple(map(int, input('Введите числа через пробел: ').split()))
 operator = input('Введите оператор (+, -, *, /): ')
