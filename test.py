@@ -71,7 +71,9 @@ for tests in passed_tests:
     passed_tests_list.append(tests["name"])
 print(passed_tests_list)
 
+
 """3.1"""
+
 
 def apply_test_check(check_func, test_results):
     passed_count = 0
@@ -91,6 +93,7 @@ print(f"Прошло тестов: {result}")
 
 
 """4.1"""
+
 
 def generate_report(title, *test_names, format="html", **options):
     print(f"Отчет: {title}")
