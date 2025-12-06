@@ -109,7 +109,5 @@ def generate_report(title, *test_names, format="html", **options):
     for option, option_value in options.items():
         print(f"{option}: {option_value}")
 
-
-
 generate_report("Daily Report", "test1", "test2", "test3",
                 format = "pdf", author = "Tester")
