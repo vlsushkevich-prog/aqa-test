@@ -7,7 +7,7 @@ class Vehicle:
 
 class Car(Vehicle):
     def honk(self):
-        print("Бип-бип!")
+        print("БИП-БИП!")
 
 car = Car(100)
 car.move()

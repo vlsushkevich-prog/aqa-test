@@ -18,4 +18,3 @@ account = SavingsAccount(1000)
 account.deposit(500)
 account.add_interest()
 print(account.balance)
-        

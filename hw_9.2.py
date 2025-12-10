@@ -9,7 +9,7 @@ class Manager(Employee):
 
 class Developer(Employee):
     def __init__(self, name):
-        super().__init__(name, 40000)
+        super().__init__(name, 60000)
 
 manager = Manager("Иван")
 print(manager.salary)
