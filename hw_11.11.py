@@ -19,7 +19,7 @@ class Book:
             return f'{self.title}'
 
 
-b1 = Book('Python 101', ['John Doe'], 2020)
+b1 = Book('Python 101', ['John Doe'], 1883)
 b2 = Book('Безымянная книга')
 b3 = Book('Совместный труд', ['Alice', 'Bob'])
 for b in (b1, b2, b3):
