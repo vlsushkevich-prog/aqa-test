@@ -47,5 +47,3 @@ def log_status_code(url):
         logger.exception('Тест FAILED')
 
 log_status_code('https://www.google.com/')
-
-
